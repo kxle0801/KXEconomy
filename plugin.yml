@@ -1,0 +1,10 @@
+name: KXEconomy
+version: 1.0.0
+main: kxleph\kxeconomy\KXEconomy
+api: 5.32.1
+author: KxlePH
+description: Async economy system.
+
+permissions:
+  kxeconomy.use.command:
+    default: op

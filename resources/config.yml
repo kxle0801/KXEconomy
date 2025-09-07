@@ -1,0 +1,45 @@
+# KXEconomy Plugin Configuration
+
+# Database settings
+database:
+  type: mysql
+  mysql:
+    host: "127.0.0.1" # for localhost
+    port: 3306
+    username: "root"
+    password: ""
+    schema: "KXEconomy" # Create your database with the name you want here
+  worker-limit: 2
+
+# Economy settings
+economy:
+  # Starting amounts for new players
+  starting-amounts:
+    gold: 1000
+    gems: 0
+    tokens: 0
+  
+  # Currency settings
+  currencies:
+    gold:
+      symbol: ""
+      name: "Gold"
+      color: "§g"
+    gems:
+      symbol: ""
+      name: "Gems"
+      color: "§a"
+    tokens:
+      symbol: ""
+      name: "Tokens"
+      color: "§b"
+  
+  # Transaction limits
+  limits:
+    max-transfer: 1000000
+    min-transfer: 1
+  
+  # Features
+  features: # track all transactions
+    transaction-logging: true
+    auto-create-accounts: true
